@@ -24,16 +24,12 @@ public class Solucao{
 	public static void PosicoesElemento(int num, int[] numeros){
 		
 		String resultado = "";  
-		
 		for (int i = 0; i < numeros.length; i++){
 
 			if (num == numeros[i]){
-
 				resultado = resultado + i + " ";  
-
 			}
 		}
-
 		if (!resultado.equals("")){
 			System.out.println(resultado.trim()); 
 		} else { 
