@@ -15,12 +15,12 @@ public class Solucao{
 			
 		}
 
-		SelectionSortRecursivo(numeros, 0); 
-		System.out.println(Arrays.toString(numeros)); 
+		SelectionSortRecursivo(numeros, 0);  
  
 	}
 
 	public static void SelectionSortRecursivo(int[] tokens, int n){
+		
 		
 		if (n == tokens.length - 1) return; 
 
@@ -29,15 +29,16 @@ public class Solucao{
 		for (int j = n + 1; j < tokens.length; j++){
 			
 			if (tokens[j] < tokens[indiceMenor]){
-
-				System.out.println(Arrays.toString(tokens));
-				int temp = tokens[j];
-				tokens[j] = tokens[indiceMenor];
-				tokens[indiceMenor] = temp; 
+				indiceMenor = j;  
 				
-				}				
+				}
 			}
-
+			
+			int temp = tokens[indiceMenor];
+			tokens[indiceMenor] = tokens[n];
+			tokens[n] = temp; 				
+			
+		System.out.println(Arrays.toString(tokens));
 		SelectionSortRecursivo(tokens, n + 1); 
 		
 	}
