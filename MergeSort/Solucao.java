@@ -18,10 +18,9 @@ public class Solucao{
 		
 		MergeSort(v, ini, meio);
 		MergeSort(v, meio + 1, fim); 
-		merge(v,ini,meio,fim);
+		merge(v,ini,meio,fim);	
 	
 	} 
-
 
 	public static void merge(int[] v, int ini, int meio, int fim){
 		
@@ -43,8 +42,7 @@ public class Solucao{
 			} else { 
 			v[k] = helper[j];
 			j++; 
-			k++; 		
-			
+			k++; 
 			}
 		}
 	
@@ -53,10 +51,12 @@ public class Solucao{
 		k++;
 		i++; 
 		}
+
  	while (j < fim){
                   v[k] = helper[j];
                   k++;
                   j++;
+		
 		}
 	} 
 }
