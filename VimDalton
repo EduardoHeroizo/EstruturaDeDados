@@ -1,0 +1,9 @@
+highlight Normal ctermfg=white ctermbg=233
+highlight LineNr ctermfg=237 ctermbg=234
+hi TabLineSel   cterm=bold,reverse  ctermbg=255         ctermfg=DarkBlue
+hi TabLine      cterm=reverse       ctermbg=255         ctermfg=DarkBlue
+hi TabLineFill  cterm=reverse       ctermbg=None        ctermfg=DarkBlue
+hi StatusLine   cterm=bold,reverse  ctermbg=255         ctermfg=DarkBlue
+colorscheme gruvbox
+set background=dark
+

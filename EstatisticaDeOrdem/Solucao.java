@@ -2,7 +2,7 @@ public class Solucao{
 	
 	public static void main(String[] args){
 
-	int[] nums = {6, 2, 1, 9, 3}; 
+	int[] nums = {1, 9, 15, -1, -44,22}; 
 	Ordem(nums); 
 
 }
