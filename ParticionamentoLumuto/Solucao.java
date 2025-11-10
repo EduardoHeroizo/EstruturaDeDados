@@ -32,9 +32,11 @@ public class Solucao{
 			swap(v,i,j); 
 			}	
 		}
+	
 	swap(v,left,i);
 	return i; 
-	 }
+	 
+	}
 	
 	public static void swap(int[] v, int i, int j){
 		int temp = v[i]; 

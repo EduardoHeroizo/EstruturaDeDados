@@ -21,17 +21,17 @@ public class Solucao{
 
 	public static int partition(int[] v, int left, int right){ 
 
-		int pivot = v[right]; 
-		int i = left - 1; 
-		
-		for (int j = left; j < right; j++){ 
-			if(v[j] <= pivot){ 
-				i++; 
-				swap(v,i,j); 
+	int pivot = v[right]; 
+	int i = left - 1; 
+	
+	for (int j = left; j < right; j++){
+		if (v[j] <= pivot){
+			i++;
+			swap(v,i,j);
 		}
-	} 
+	}
 	swap(v,i+1,right);
-	return i+1;		 		
+	return i+1;
 }
 
 	public static void swap(int[] v, int i, int j){ 
