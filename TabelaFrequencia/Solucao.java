@@ -19,9 +19,11 @@ public class Solucao{
 	public static void tabelaFrequencia(int[] v){ 
 		int[] helper = new int[maiorValor(v) + 1];	
 		String resultado = "";
+		
 		for (int num : v){
 			helper[num] = helper[num] + 1; 
 			}
+		
 		for (int i = 0; i<v.length;i++){
 			if (helper[v[i]] != 0){
 				resultado = resultado + v[i] + "," + helper[v[i]] + " ";
