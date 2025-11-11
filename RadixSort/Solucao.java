@@ -9,34 +9,35 @@ public class Solucao{
 
 	}
 
-	public static void countingSort(int[] a, int exp){
-
-	int n = a.length; 
-	int[] b = new int[n];
-	int[] c = new int[10]; 
-
-	for (int i = 0; i < n; i++){
-
-		int digit = (a[i] / exp) % 10;
-		c[digit]++;
+	public static void countingSort(int[] v, int exp){
+	
+	int[] output = new int[v.length];
+	int[] count = new int[10];
+		
+	for (int i = 0; i < v.length;i++){
+		int digit = (v[i] / exp) % 10; 
+		count[digit]++;
 		}
 
-	for (int i = 1; i < 10; i++) {
+	for (int i = 1; i<10;i++){
 
-		c[i] += c[i-1];
+		count[i] += count[i-1];
 		}
 
-	for (int i = n - 1; i >= 0; i--) {
-        int digit = (a[i] / exp) % 10;
-        b[c[digit] - 1] = a[i];
-        c[digit]--;
-    }
+	for (int i = v.length - 1; i >= 0; i--){
 
-  for (int i = 0; i < n; i++) {
-        a[i] = b[i];
+		int digit = (v[i] / exp) % 10;
+		output[count[digit]-1] = v[i];
+		count[digit]--;
+ 
+		}
+	for (int i = 0; i < v.length; i++){
 
+		v[i] = output[i];
+
+		}		
 	}
-}
+
 	public static int maximoValor(int[] v){ 
 		int maiorValor = v[0];
 		for (int i = 0; i < v.length;i++){
