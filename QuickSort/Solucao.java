@@ -41,4 +41,4 @@ public class Solucao{
 	v[j] = aux;
 
 	}
-}
+}	

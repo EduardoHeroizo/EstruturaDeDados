@@ -1,3 +1,5 @@
+// Utilizando particionamento Hoare
+
 public class Solucao02{
 
 	public static int partitionHoare(int[] v, int left, int right){
@@ -28,4 +30,3 @@ public class Solucao02{
 		v[left] = v[right];
 		v[right] = aux;	
 }
-
