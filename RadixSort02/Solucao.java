@@ -1,5 +1,14 @@
+import java.util.Arrays;
+
 public class Solucao{
 
+	public static void main(String[] args){
+
+	int[] v = {1,2,3,4,0,234,13,3245,32,12,1,234};
+	radixSort(v);
+	System.out.println(Arrays.toString(v));	
+
+}
 
 	public static void countingSort(int[] v, int exp){
 
@@ -39,4 +48,3 @@ public class Solucao{
         	return max;
     	}
 }
-
