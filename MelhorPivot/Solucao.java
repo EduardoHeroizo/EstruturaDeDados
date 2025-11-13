@@ -23,7 +23,6 @@ public class Solucao{
     		} else {
         		System.out.println(num2);
     }
-
 }
 
 	public static void quickSort(int[] v, int left, int right){
