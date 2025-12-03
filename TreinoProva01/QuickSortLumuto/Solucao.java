@@ -23,7 +23,7 @@ public class Solucao{
 		int pivot = v[left]; 
 		
 		for(int j = left + 1; j<=right; j++){ 
-			if(v[j] < pivot){ 
+			if(v[j] <= pivot){ 
 				i++; 
 				swap(v,i,j);
 			}
